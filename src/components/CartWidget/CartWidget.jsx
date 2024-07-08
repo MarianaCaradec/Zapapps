@@ -1,11 +1,14 @@
 import React from 'react'
 import "./CartWidget.css"
+import { HiOutlineShoppingCart } from "react-icons/hi";
+import { TbShoppingBagCheck } from "react-icons/tb";
 
 export const CartWidget = () => {
     return (
-        <div>
+        <div className='contenedor'>
             <span className='cantidad'>0</span>
-            <span className='carrito'>🛒</span>
+            <HiOutlineShoppingCart className='carrito'/>
+            <TbShoppingBagCheck className='comprado'/>
         </div>
     )
 }

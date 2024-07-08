@@ -1,7 +1,20 @@
+.contenedor {
+    display: inline-block;
+    margin: 1.5rem;
+}
+
+.carrito, .comprado {
+    margin: 0 1rem;
+}
 .cantidad {
     font-size: 3rem;
+    font-family: monospace;
 }
 
 .carrito {
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+.comprado {
+    font-size: 4rem;
 }

@@ -3,8 +3,6 @@ import "./ItemListContainer.css"
 
 export const ItemListContainer = ({greeting}) => {
     return (
-        <div className='saludo'>
-            {greeting}
-        </div>
+        <div className='saludo'> {greeting} </div>
     )
 }
