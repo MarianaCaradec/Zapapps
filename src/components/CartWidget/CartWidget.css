@@ -8,13 +8,14 @@
 }
 .cantidad {
     font-size: 3rem;
-    font-family: monospace;
+    color: #F87060;
 }
 
-.carrito {
-    font-size: 4rem;
+.carrito, .comprado {
+    font-size: 3rem;
+    color: #F87060;
 }
 
-.comprado {
-    font-size: 4rem;
+.comprado::after {
+    color: #5E747F;
 }
