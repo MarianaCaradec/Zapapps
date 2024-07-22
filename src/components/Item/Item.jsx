@@ -5,9 +5,9 @@ export const Item = ({e}) => {
     return (
         <div className='element'>
             <h1>{e.title}</h1>
-            <p>{e.desc}</p>
+            <img className='img' src={e.img} />
             <p>{e.price}</p>
-            <button>Comprar</button>
+            <button>Ver más</button>
         </div>
     )
 }

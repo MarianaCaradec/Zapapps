@@ -1,3 +1,13 @@
+.element {
+    margin-bottom: 1rem;
+}
+
 .element button {
     background-color: #5E747F;
+    margin-top: 2rem;
+}
+
+.img {
+    width: 60%;
+    margin: 1.5rem .5rem;
 }
