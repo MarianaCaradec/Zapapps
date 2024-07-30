@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Item.css'
-import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer'
 import { Link } from 'react-router-dom'
 
 

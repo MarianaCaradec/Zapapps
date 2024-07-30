@@ -12,7 +12,7 @@ export const ItemDetailContainer = () => {
         getOneProduct(id)
         .then(data => setProduct(data))
         .finally(() => setLoading(false))
-    }, [])
+    }, [id])
 
     if(loading) {
         <h2>Cargando...</h2>
