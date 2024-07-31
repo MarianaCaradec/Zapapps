@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState({})
     const [loading, setLoading] = useState(true)
-    const {id} = useParams()
+    const id = useParams()
 
     useEffect(() => {
         getOneProduct(id)
@@ -19,7 +19,7 @@ export const ItemDetailContainer = () => {
     }
 
     return (
-        product.length > 0 &&
-        <ItemDetail producto={product}/>
+        product &&
+        <ItemDetail product={product}/>
     )
 }
