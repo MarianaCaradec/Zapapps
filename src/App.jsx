@@ -4,13 +4,14 @@ import { NavBar } from './components/NavBar/NavBar'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { CartContextProvider } from './context/cartContext'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <CartContextProvider>
     <BrowserRouter>
     <NavBar />
 
@@ -20,6 +21,7 @@ function App() {
       <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
     </Routes>
     </BrowserRouter>
+    </CartContextProvider>
 
     </>
   )

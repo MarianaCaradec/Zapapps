@@ -1,9 +1,15 @@
-import React from 'react'
-import Button from '../Button/Button'
+import React, { useContext } from 'react'
+import ItemCount from '../../ItemCount/ItemCount'
+import { CartContext } from '../../context/cartContext'
 
 export const ItemDetail = ({product}) => {
-    console.log(product)
     const {id, title, img, desc, price} = product
+
+    const {addToCart} = useContext(CartContext)
+
+    const handleAddToCart = (count) => {
+        addToCart(product, count)
+    }
 
     return (
         <div key={id}>
@@ -11,7 +17,7 @@ export const ItemDetail = ({product}) => {
             <img className='img' src={img} />
             <p>{desc}</p>
             <p>{price}</p>
-            <Button />
+            <ItemCount handleAddToCart={handleAddToCart}/>
         </div>
 
     )

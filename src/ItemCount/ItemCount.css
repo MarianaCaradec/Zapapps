@@ -1,0 +1,11 @@
+button {
+    background-color: #F87060;
+    margin: 1.5rem;
+    justify-content: center;
+}
+
+span {
+    font-size: 2rem;
+    font-family: monospace;
+    color: #5E747F;
+}
