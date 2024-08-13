@@ -8,10 +8,10 @@ import { CartContextProvider } from './context/cartContext'
 
 
 function App() {
-
   return (
     <>
     <CartContextProvider>
+
     <BrowserRouter>
     <NavBar />
 
@@ -21,6 +21,7 @@ function App() {
       <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
     </Routes>
     </BrowserRouter>
+    
     </CartContextProvider>
 
     </>

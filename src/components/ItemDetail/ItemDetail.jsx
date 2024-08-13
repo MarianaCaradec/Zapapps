@@ -16,7 +16,7 @@ export const ItemDetail = ({product}) => {
             <h2>{title}</h2>
             <img className='img' src={img} />
             <p>{desc}</p>
-            <p>{price}</p>
+            <p>${price}</p>
             <ItemCount handleAddToCart={handleAddToCart}/>
         </div>
 
