@@ -10,13 +10,13 @@ export const NavBar = () => {
             <div>
                 <Link to={'/'}><h1>Zapapps</h1></Link>
                 <ul>
-                    <li> <Link to={'/categoria/deportivas'}>Deportivas</Link> </li>
-                    <li> <Link to={'/categoria/urbanas'}>Urbanas</Link> </li>
-                    <li> <Link to={'/categoria/formales'}>Formales</Link> </li>
+                    <li> <Link to='/categoria/deportivas'>Deportivas</Link> </li>
+                    <li> <Link to='/categoria/urbanas'>Urbanas</Link> </li>
+                    <li> <Link to='/categoria/formales'>Formales</Link> </li>
                 </ul>
             </div>
             <div>
-                <CartWidget />
+                <Link to='/cart'>  <CartWidget /> </Link>
             </div>
         </div>
     )

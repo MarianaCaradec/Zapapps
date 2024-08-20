@@ -1,25 +1,25 @@
 import React, { useContext } from 'react'
 import ItemCount from '../../ItemCount/ItemCount'
 import { CartContext } from '../../context/cartContext'
+import { Link } from 'react-router-dom'
 
 export const ItemDetail = ({product}) => {
     const {id, title, img, desc, price} = product
 
-    const {addToCart} = useContext(CartContext)
-
-    const handleAddToCart = (count) => {
-        addToCart(product, count)
-    }
+    const {isInCart} = useContext(CartContext)
 
     return (
-        <div key={id}>
+        <div>
             <h2>{title}</h2>
             <img className='img' src={img} />
             <p>{desc}</p>
             <p>${price}</p>
-            <ItemCount handleAddToCart={handleAddToCart}/>
+            {
+            isInCart(product.id) ? 
+            <Link to='/cart'>Ir al carrito</Link> 
+            : <ItemCount prod={product}/>
+            }
         </div>
-
     )
 }
 
