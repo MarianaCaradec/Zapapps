@@ -17,7 +17,7 @@ export const ItemDetail = ({product}) => {
             {
             isInCart(product.id) ? 
             <Link to='/cart'>Ir al carrito</Link> 
-            : <ItemCount prod={product}/>
+            : <ItemCount product={product}/>
             }
         </div>
     )

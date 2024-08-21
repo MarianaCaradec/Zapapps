@@ -3,18 +3,16 @@ import ItemCount from '../../ItemCount/ItemCount'
 import { CartContext } from '../../context/cartContext'
 
 const ItemCart = ({product}) => {
-    const e = product
     const {removeItem} = useContext(CartContext)
-    console.log(e)
     return (
-        <div className='element' id={e.id}>
-            <h2>{e.title}</h2>
-            <img className='img' src={e.img} />
-            <p>${e.price}</p>
-            <p>Estás llevando {e.cantidad} pares</p>
-            <p>Subtotal a pagar: ${e.price * e.cantidad}</p>
-            <ItemCount  prod={e}/>
-            <button onClick={() => removeItem(e.id)}>Borrar producto</button>
+        <div className='element' id={product.id}>
+            <h2>{product.title}</h2>
+            <img className='img' src={product.img} />
+            <p>${product.price}</p>
+            <p>Estás llevando {product.cantidad} pares</p>
+            <p>Subtotal a pagar: ${product.price * product.cantidad}</p>
+            <ItemCount  product={product}/>
+            <button onClick={() => removeItem(product.id)}>Borrar producto</button>
         </div>
     )
 }
