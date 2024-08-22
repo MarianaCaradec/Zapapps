@@ -25,8 +25,8 @@ const Cart = () => {
                     )
                 })
             }
-
         <button onClick={() => setCart([])}>Vaciar carrito</button>
+        <Link to='/checkout'>Realizar compra</Link>
         </>
 
     )

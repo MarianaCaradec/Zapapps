@@ -1,0 +1,39 @@
+h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: #5E747F;
+}
+
+form {
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(106,135,150,0.33);
+    -moz-box-shadow: 0px 0px 8px 3px rgba(106,135,150,0.33);
+    box-shadow: 0px 0px 8px 3px rgba(106,135,150,0.33);
+    width: 35vw;
+    margin: 2.5rem 27rem;
+}
+
+.label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F87060;
+    text-align: center;
+    width: 90%;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+input {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    background-color: #ccc;
+    color: #5E747F;
+    border-radius: 7%;
+    padding: 1.5rem 6rem;
+}
+
+input:focus {
+        outline: none;
+        background-color: #F87060;
+        border: 1px solid #ccc;
+}
