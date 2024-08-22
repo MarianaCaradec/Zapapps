@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import './ItemDetail.css'
 import ItemCount from '../../ItemCount/ItemCount'
 import { CartContext } from '../../context/cartContext'
 import { Link } from 'react-router-dom'
@@ -16,7 +17,7 @@ export const ItemDetail = ({product}) => {
             <p>${price}</p>
             {
             isInCart(product.id) ? 
-            <Link to='/cart'>Ir al carrito</Link> 
+            <Link className='link' to='/cart'>Ir al carrito</Link> 
             : <ItemCount product={product}/>
             }
         </div>

@@ -18,8 +18,10 @@
     flex-direction: space-between;
     justify-content: center;
 }
-
-.navbar li {
+.navbar a:hover {
+    color: #F87060; 
+}
+.link {
     display: block;
     text-align: center;
     padding: 2rem;
@@ -27,11 +29,8 @@
     font-size: 3rem;
     text-decoration: none;
     color: #5E747F;
-    margin: 0 3.5rem;
+    margin-left: 3.5rem;
 }
-.navbar li:hover {
+.link:hover {
     background-color: #cac6c1;
-}
-.navbar a:hover {
-    color: #F87060; 
 }

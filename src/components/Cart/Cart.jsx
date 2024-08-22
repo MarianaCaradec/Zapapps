@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import './Cart.css'
 import { CartContext } from '../../context/cartContext'
 import ItemCart from '../ItemCart/ItemCart'
 import { Link } from 'react-router-dom'
@@ -11,7 +12,7 @@ const Cart = () => {
         return(
             <div>
                 <h3>Tu carro esta vacio</h3>
-                <Link to='/'> Ir al inicio</Link>
+                <Link className='link' to='/'> Ir al inicio</Link>
             </div>
         )
     }
@@ -26,7 +27,7 @@ const Cart = () => {
                 })
             }
         <button onClick={() => setCart([])}>Vaciar carrito</button>
-        <Link to='/checkout'>Realizar compra</Link>
+        <Link className='link' to='/checkout'>Realizar compra</Link>
         </>
 
     )

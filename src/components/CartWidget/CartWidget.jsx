@@ -12,7 +12,6 @@ export const CartWidget = () => {
         <div className='contenedor'>
             <span className='cantidad'>{itemQuantity()}</span>
             <HiOutlineShoppingCart className='carrito'/>
-            <TbShoppingBagCheck className='comprado'/>
         </div>
     )
 }
