@@ -13,15 +13,6 @@ export const ItemListContainer = () => {
     const {cat} = useParams()
 
     useEffect(() => {
-        // const productsRef = collection(dataBase, 'items')
-        // const productsbyCat = query(collection(dataBase, 'items'), where('category', '==', cat))
-
-        // const prods = collection(dataBase, 'items')
-        //     getDocs(prods).then(snapshot => {
-        //         const dataProducts = snapshot.docs.map(doc => doc.data())
-        //         cat ? setProducts(productsbyCat) : setProducts(productsRef)
-        //     }).finally(() => setLoading(false))
-
         if(cat) {
             const productsbyCat = query(collection(dataBase, 'items'), where('category', '==', cat))
             getDocs(productsbyCat).then(snapshot => {

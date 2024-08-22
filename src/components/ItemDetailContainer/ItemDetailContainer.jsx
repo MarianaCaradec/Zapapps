@@ -17,9 +17,6 @@ export const ItemDetailContainer = () => {
             const productDetailed = {...dataProduct, id: snapshot.id}
             setProduct(productDetailed)
         }).finally(() => setLoading(false))
-        // getOneProduct(id)
-        // .then(data => setProduct(data))
-        // .finally(() => setLoading(false))
     }, [])
 
     if(loading) {
