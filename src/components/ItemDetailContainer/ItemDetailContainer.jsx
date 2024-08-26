@@ -7,6 +7,7 @@ import { dataBase } from '../../services/firebaseConfig'
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState({})
     const [loading, setLoading] = useState(true)
+    
     const {id} = useParams()
 
     useEffect(() => {

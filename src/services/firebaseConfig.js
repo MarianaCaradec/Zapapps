@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCQcrOF8SZnYhcX83vEt2dJYC55GFozfzw",
-    authDomain: "zapapps-fbf0c.firebaseapp.com",
-    projectId: "zapapps-fbf0c",
-    storageBucket: "zapapps-fbf0c.appspot.com",
-    messagingSenderId: "79738204745",
-    appId: "1:79738204745:web:274bf4d13f8ea9f6a50598"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
 };
 
 // Initialize Firebase
